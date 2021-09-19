@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+}
+
+div.desktopVarCartItem{
+border-bottom:1px solid #cccccc;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 14% 26% 10% 22% 10% 18%; /*3fr 3fr 3fr 3fr 3fr 1fr;*/
+  grid-gap: 2vw;
+  padding: 8px 0px; 
+    align-items: center;
+}
+
+div.desktopVarCartItem>button{
+    background-color: white;
+    color:red;
+    background-image: url(remove01.svg);
+    background-repeat: no-repeat;
+    cursor:pointer;
+    border: none;
+    width:22px;
+    height:22px;
+}
+
+div.desktopVarCartItem>button:active{
+     transform: translateY(4px);
+}
+
+div.desktopVarCartItem>div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trispace', sans-serif;
+    font-size: 14px;
+    padding:5px;
+}
+
+div.mobileVarCartItem{
+    padding: 15px;
+    border:1px solid #cccccc;
+    display:grid;
+    grid-gap:1vw;
+    grid-template-areas: 'image image name name name name'
+                         'image image name name name name'
+                         'image image name name name name'
+                         'price price price price price price'
+                         'quantity quantity quantity quantity quantity quantity'
+                         'total total total total total total'
+}
+div.mobileVarCartItem>div:nth-child(1){
+    grid-area: image;
+}
+div.mobileVarCartItem>div:nth-child(2){
+    grid-area: name;
+}
+div.mobileVarCartItem>div:nth-child(3){
+    grid-area: price;
+    margin-right:2em;
+}
+div.mobileVarCartItem>div:nth-child(4){
+    grid-area: quantity;
+}
+div.mobileVarCartItem>div:nth-child(5){
+    grid-area: total;
+     /*margin-right:2em;*/
+}
+
+div.mobileVarCartItem>div{
+    display:flex;
+    margin: 0;
+    padding:5px;
+    align-items: center;
+    
+    font-family: 'Trispace', sans-serif;
+    font-size: 14px;
+    padding:5px;
+}
+div.mobileVarCartItem>div:nth-child(2){
+    font-weight: bold;
+}
+div.mobileVarCartItem>div:nth-child(3){
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items: center;
+}
+div.mobileVarCartItem>div:nth-child(4){
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items: center;
+}
+div.mobileVarCartItem>div:nth-child(5){
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items: center;
+}
+
+div.cartWrapper{
+    display:block;
+    text-align: center;
+    margin:auto;
+    width:90%;
+}
+
+div.cartWrapper>div{
+    display:inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+ul.container{
+    display: flex;
+    flex-flow: column nowrap;
+}
+ul.container>li{
+  display:block;
+  margin:0;
+  padding:0;
+}
+ 
+article.btnHolder{
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+article.btnHolder>button{
+    display:inline-block;
+    border:1px solid gray;
+    padding: 1vw;
+    font-family: 'Trispace', sans-serif;
+    font-size: 14px;
+    padding:5px;
+    cursor:pointer;
+    background-color: white;
+}
+article.btnHolder>button:focus{
+     border:1px solid gray;
+}
+
+article.btnHolder>button:active {
+  transform: translateY(4px);
+}
+
+
+article.btnHolder>div{
+    padding: 5px;
+    background-color: white;
+    color: black;
+     border:1px solid #aaaaaa;
+    width: 5em;
+}
+
+
+section.titleOfList{
+    background-color: burlywood;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 44% 10% 26% 12% 8%;
+  grid-gap: 0;
+}
+
+section.titleOfList>div{
+  display:inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-family: 'Trispace', sans-serif;
+  font-size: 14px;
+  padding:5px;
+}
+section.titleOfList>div:nth-child(1){
+    text-align: left;
+}
+
+div.wrpRow{
+    display:inline-flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+div.wrpRow>div,div.wrpRow>button{
+    margin:0px 8px;
+}
+
+div.wrpRow>button{
+    background-color: white;
+    color:red;
+    background-image: url(remove01.svg);
+    background-repeat: no-repeat;
+    cursor:pointer;
+    border: none;
+    width:22px;
+    height:22px;
+}
+
+div.wrpRow>button:active{
+  transform: translateY(4px);
+}
+/*************media queries*/
+section.orderSection{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items:flex-end;
+    margin: auto;
+    width:90%;
+}
+
+section.orderSection>div{
+    font-family: 'Trispace', sans-serif;
+    font-size: 14px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0px;
+    width:50%;
+}
+
+
+
+
+section.orderSection>button{
+    background-color: chocolate;
+    color:white;
+    width:250px;
+    max-width: 90%;
+    cursor:pointer;
+    border:none;
+    padding:8px 0px;
+}
+
+section.orderSection>a{
+    margin-top: 18px;
+    text-decoration: none;
+    font-family: 'Trispace', sans-serif;
+    font-size: 16px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:8px 0px;
+    width:250px;
+    max-width: 90%;
+    background-color: burlywood;
+}
+
+section.orderSection>button:active, section.orderSection>a:active{
+  transform: translateY(4px);
+}
+
+section.orderSection>a:active{
+    color: white;
+}
+
+section.noGoods{
+    letter-spacing: 0.2em;
+    font-family: 'Trispace', sans-serif;
+    font-size: 16px;
+    display: none;
+    margin:1vw;
+    padding:1vw;
+    background-color: burlywood;
+    color: black;
+}
+
+
+@media screen and (max-width:520px){
+    section.titleOfList{
+        display:none;
+    }
+    div.desktopVarCartItem{
+        display:none;
+    }
+    
+    div.mobileVarCartItem{
+        display: grid;
+    }
+}
+
+@media screen and (min-width:520px){
+    section.titleOfList{
+        display:grid;
+    }
+      div.desktopVarCartItem{
+        display:grid;
+    }
+    
+    div.mobileVarCartItem{
+        display: none;
+    }
+    
+}

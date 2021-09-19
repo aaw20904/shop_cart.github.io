@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Trispace&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
+        <title>JS-practice</title>
+        <style>
+          @import url(reset.css);
+          @import url(index.css);
+        </style>
+        <script type="text/javascript" src="mainpage.js"></script>  
+    </head>
+    <body>
+    <h1 class="titleOfPage">
+       <div>
+        Shoop of food     
+      </div>
+        </h1>
+        <!--cart menu and filters-->
+   <section class="genWrapper">     
+       <!--- --->
+    <article class="cartIconWrapperH">
+    <div class="cartIconWrapper">
+        <div data-btn-cart-mnu = 'cart_mnu_call'>
+           <img src="cart.svg">    
+           <div>CART</div>
+        </div>
+        <div data-btn-cart-mnu='cartMnuCount'>
+           0 ITEM(S)  
+        </div>
+    </div>    
+    </article>
+       <!--- --->
+    <a class='hideCartIcon' href="cart.html">
+        <div>
+           <img src="cart.svg">    
+           <div>CART</div>
+        </div>
+    </a>
+    <article data-btn-y="tst" class="filterBtnWrapper">
+     FILTERS
+    </article>
+    </section>
+        <!--cart-->
+          <div class='cartHolder1'>
+    <div class="cartContainer" id="cartContainer">    
+    <section class="cartSubcontainer" id='subContainerMnu'>
+       <article class="cartTitle">
+         <div>Item</div>
+         <div>Price</div>
+         <div>Quantity</div>
+         <div>Total</div>
+        </article>    
+      <article class="scroller">
+        <ul class="cartWrapper" data-elem='goods-cart-wrapper'> 
+         <!-- <li class="ItemsOfCart" data-cart-item-id='g0029'>
+             <div><img src="undef_cart.svg" data-inner='src'></div>
+             <div data-inner='name'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+             <div data-inner='price'>price</div>
+              <div data-inner='quantity'>quantity</div>
+              <div data-inner='total'>total</div>
+          </li>
+             <li class="ItemsOfCart" data-cart-item-id='g0030'>
+             <div><img src="undef_cart.svg" data-inner='src'></div>
+             <div data-inner='name'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+             <div data-inner='price'>price</div>
+              <div data-inner='quantity'>quantity</div>
+              <div data-inner='total'>total</div>
+          </li> -->
+        </ul>
+      </article>
+      <article class="cartSumm underline" >
+          <div class="smallSum">Total:</div>
+          <div class="mediumSum" data-elem="all-the-sum">$85.50</div>
+      </article>
+      <article class="cartSumm">
+          <div class="smallSum" >Grand total:</div>
+          <div class="bigSum" data-elem="grand-sum">$85.50</div>
+      </article>
+      <article class='cartExtLinks'>
+            <div><a href="cart.html">WIEW CART</a>  </div>
+            <div><a  href="#">CHECK OUT NOW</a>  </div>
+      </article>    
+        
+    </section>
+       <!-- <article class="cartNoGoods">
+         <div>No goods in cart</div>
+        </article> -->
+    </div>
+        </div>
+         <!--cart-end--->
+        
+        <ul class='goodsHolderContainer' id ='goodsMainHolder'>
+          
+        </ul>
+        
+        <article id="chooseGoodsContainer">
+          
+        </article>
+        <div style="display:block;margin:10px;" id="test0001">
+        </div>
+        <!--*section of goods*-->
+        <section id="goodsItemsMainWrp" class="btnAndGoodsWrapper">
+       
+        </section>
+    </body>
+</html>

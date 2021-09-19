@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Trispace&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
+        <title>JS-practice</title>
+        <style>
+          @import url(reset.css);
+          @import url(cart.css);
+        </style>
+        <script type="text/javascript" src="cart.js"></script> 
+    </head>
+    <body>
+  <div class='cartWrapper'>
+      <div>
+            <section class='titleOfList'>
+             <div>Name</div>
+             <div>Price</div>
+             <div>Quantity</div>
+             <div>Total:</div>
+             <div>Rem.</div>
+            </section>
+            <ul class="container">
+             <!--   <li>
+                  <div class="desktopVarCartItem">
+                    <div data-sect-cart="image">
+                       <img src="bread01_32.jpg">
+                    </div>
+                    <div data-sect-cart="name">
+                       Bread
+                    </div>
+                    <div data-sect-cart="price">
+                       $10
+                    </div>
+                     <div data-sect-cart="count">
+                       <article class="btnHolder">
+                           <button data-btn='plus'>+</button>
+                           <div>3</div>
+                           <button data-btn='minus'>-</button>
+                       </article>
+                    </div>
+                    <div data-sect-cart="total">
+                       $50 
+                    </div>
+                       <button data-btn='remove'>X</button>
+                  </div>
+                  <div class="mobileVarCartItem">
+                      <div data-sect-cart="image">
+                       <img src="bread01_32.jpg">
+                    </div>
+                    <div data-sect-cart="name">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    </div>
+                    <div data-sect-cart="price">
+                       <div>Price:</div><div>$10</div>
+                    </div>
+                     <div data-sect-cart="count">
+                      <div>Quantity:</div><article class="btnHolder">
+                           <button data-btn='plus'>+</button>
+                           <div>3</div>
+                           <button data-btn='minus'>-</button>
+                       </article>
+                    </div>
+                    <div data-sect-cart="total">
+                        <div>Total:</div> <div class="wrpRow"><div>$50</div> <button data-btn='remove'>X</button></div>
+                    </div>
+                  </div>
+                </li> -->
+                
+                 
+            </ul>
+          <section class="noGoods">
+              Cart is empty
+          </section>
+        </div>
+        </div>
+        
+        <section class="orderSection">
+          <div><div>Subtotal:</div><div data-section-id='subtotal'>$41</div></div>
+         <div><div>Grand total:</div><div data-section-id='grandtotal'>$41</div></div>
+         <button data-btn='checkout'>CHECK OUT</button>
+         <a href="1.html">Back to shopping</a>
+        </section>
+
+    </body>
+</html>
